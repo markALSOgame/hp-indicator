@@ -1,0 +1,9 @@
+{
+  "key.categories.hpindicator": "HP Indicator",
+  "key.hpindicator.open": "Open HP Indicator Settings",
+  "gui.hpindicator.title": "HP Indicator",
+  "gui.hpindicator.scale": "Size",
+  "gui.hpindicator.offset": "Height Above Head",
+  "gui.hpindicator.number_on": "Show HP Number: ON",
+  "gui.hpindicator.number_off": "Show HP Number: OFF"
+}

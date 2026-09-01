@@ -1,0 +1,9 @@
+{
+  "key.categories.hpindicator": "HP Indicator",
+  "key.hpindicator.open": "Открыть настройки HP Indicator",
+  "gui.hpindicator.title": "HP Indicator",
+  "gui.hpindicator.scale": "Размер",
+  "gui.hpindicator.offset": "Высота над головой",
+  "gui.hpindicator.number_on": "Показывать число HP: ВКЛ",
+  "gui.hpindicator.number_off": "Показывать число HP: ВЫКЛ"
+}

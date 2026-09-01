@@ -1,0 +1,45 @@
+plugins {
+    id 'eclipse'
+    id 'idea'
+    id 'net.minecraftforge.gradle' version '5.1.+'
+}
+
+version = '1.0.0'
+group = 'com.example.hpindicator'
+archivesBaseName = 'hpindicator'
+
+// Компиляция в байткод Java 8 даже если Gradle запущен на более новой JVM
+compileJava {
+    options.encoding = 'UTF-8'
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+}
+
+minecraft {
+    // Официальные Mojang-мэппинги (как в актуальном MDK 1.16.5)
+    mappings channel: 'official', version: '1.16.5'
+
+    runs {
+        client {
+            workingDirectory project.file('run')
+            property 'forge.logging.console.level', 'info'
+            mods { hpindicator { source sourceSets.main } }
+        }
+    }
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.16.5-36.2.34'
+}
+
+jar {
+    manifest {
+        attributes([
+                'Specification-Title'   : 'hpindicator',
+                'Specification-Vendor'  : 'hpindicator',
+                'Specification-Version' : '1',
+                'Implementation-Title'  : project.name,
+                'Implementation-Version': project.version
+        ])
+    }
+}
